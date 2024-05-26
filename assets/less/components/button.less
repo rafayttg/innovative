@@ -1,0 +1,35 @@
+.btn {
+    padding: 12px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s all;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 18px solid @color-secondary;
+        border-left: 17px solid transparent;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        transition: .5s all;
+    }
+
+    &:hover {
+        color: #fff;
+        background: transparent;
+
+        &::before {
+            border: none;
+            transition: .5s all;
+        }
+
+    }
+
+}

@@ -1,0 +1,56 @@
+.our-work {
+    padding: 120px 0;
+    background-image: url(../images/bg/bg-work.jpg);
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    z-index: 1;
+
+    .info-work {
+        margin-bottom: 22px;
+
+        .arrow-down {
+            width: 40px;
+            margin: 0 auto;
+        }
+    }
+
+
+    .work-detail {
+        position: relative;
+        z-index: 1;
+        margin-top: 16px;
+        overflow: hidden;
+
+
+        img {
+            transition: .5s all;
+        }
+
+        .work-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 2;
+
+            h4 {
+                color: @color-white;
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+        }
+
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+
+    }
+}

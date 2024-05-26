@@ -1,0 +1,106 @@
+.header {
+    padding: 20px 0;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #5e5e5e;
+
+    .container-fluid {
+        width: 96%;
+    }
+
+    .logo {
+        display: block;
+        width: 70px;
+        height: 70px;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .phn-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    ul {
+        text-align: right;
+        position: relative;
+        margin-top: 20px;
+
+        li {
+            display: inline-block;
+            padding: 0 12px;
+            position: relative;
+            z-index: 1;
+            transition: .5s all;
+
+            a {
+                color: @color-white;
+                font-weight: 700;
+                transition: .5s all;
+                font-size: 16px;
+            }
+
+            .nav-link {
+                padding: 0;
+            }
+
+            &.me-btn {
+                a {
+                    display: inline-block;
+                    margin-left: 8px;
+                    color: #fffefe;
+                    font-size: 22px;
+                    line-height: 24px;
+                    font-weight: 400;
+                }
+
+                span {
+                    display: block;
+                    text-align: left;
+                    color: @color-grey;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        .dropdown-menu {
+            background-color: @color-white;
+            padding: 0;
+            margin: 0;
+
+            .dropdown-item {
+                color: #000000 !important;
+                padding: 6px 15px 4px 15px;
+                font-weight: 500;
+                border-bottom: 1px solid #3182ce;
+                margin-bottom: 0px;
+                letter-spacing: 0.5px;
+                font-size: 12px;
+                font-weight: 600;
+                transition: .5s all;
+
+
+                &:hover {
+                    background: #3182ce;
+                    color: @color-white !important;
+                }
+            }
+
+        }
+    }
+}
