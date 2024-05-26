@@ -41,6 +41,8 @@
         z-index: 2;
 
 
+
+
         .container {
             &::before {
                 position: absolute;
@@ -62,6 +64,17 @@
                 background: #5e5e5e;
             }
         }
+    }
+
+    &.pack-banner {
+
+        .container {
+            position: relative;
+        }
+
+        background: url(../images/banner/pack-banner.jpeg) no-repeat;
+        background-size: cover;
+        background-position: 50%;
     }
 
     .social {
