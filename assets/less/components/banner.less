@@ -70,6 +70,57 @@
 
         .container {
             position: relative;
+
+            &::before {
+                top: -100px;
+            }
+
+            &::after {
+                position: absolute;
+                left: -10px;
+                top: auto;
+                bottom: -120px;
+                width: 1px;
+                height: 155px;
+                content: "";
+                background: #5e5e5e;
+            }
+
+            .social {
+                bottom: 10px;
+            }
+
+            .info-banner {
+                h4 {
+                    color: #e74028;
+                    font-size: 30px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                }
+
+
+                h1 {
+                    font-size: 110px;
+                    line-height: 110px;
+                    position: relative;
+
+                    &::before {
+                        content: " Pricing \A Plans";
+                        width: 100%;
+                        position: absolute;
+                        left: -15px;
+                        right: 0px;
+                        white-space: pre;
+                        margin: auto;
+                        color: transparent;
+                        z-index: -1;
+                        top: -8px;
+                        -webkit-text-stroke: 1px #53514e;
+                    }
+                }
+
+            }
         }
 
         background: url(../images/banner/pack-banner.jpeg) no-repeat;
@@ -144,4 +195,57 @@
         }
     }
 
+}
+
+.cur-page {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    ul {
+        text-align: center;
+
+
+        li {
+            display: inline-block;
+            padding: 0 15px;
+            position: relative;
+            z-index: 1;
+
+
+            a {
+                color: @color-white;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            &:last-child {
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 90%;
+                    height: 2px;
+                    top: calc(50% - 1px);
+                    background: #e74028;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: -10px;
+        top: calc(50% - .5px);
+        background: #5e5e5e;
+        width: 38%;
+        height: 1px;
+    }
 }

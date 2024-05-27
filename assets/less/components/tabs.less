@@ -1,0 +1,48 @@
+.pack2 .nav-tabs {
+    justify-content: center;
+    text-align: center;
+    border: none;
+    margin: 0 0 30px 0;
+
+
+    .nav-item {
+        margin: 0;
+        border: none;
+        padding: 0 4px;
+
+        .nav-link {
+            border: none;
+            background: transparent;
+            color: #010212;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 6px 15px;
+            transition: .5s all;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                background: @color-primary;
+                width: 0;
+                height: 6px;
+                bottom: 8px;
+                margin: auto;
+                z-index: -1;
+                transition: .5s all;
+
+            }
+
+            &:hover {
+
+                &::before {
+                    width: 80%;
+                }
+
+            }
+        }
+    }
+}
