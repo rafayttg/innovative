@@ -1,0 +1,66 @@
+.our-collab {
+    background: @color-darkpurple;
+    padding: 80px 0;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .container::before {
+        height: calc(100% + 30px);
+        width: 1px;
+        position: absolute;
+        right: -40px;
+        content: "";
+        top: 0px;
+        background: #454545;
+    }
+
+    .info-colab {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            color: @color-white;
+        }
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 8px;
+            width: 15%;
+            bottom: -50px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 20px;
+            width: 1px;
+            height: 80px;
+            background: #454545;
+            top: 272px;
+        }
+    }
+
+    .in-colab {
+        height: 110px;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 0.5px solid  @color-white;
+        transition: .3s all;
+
+        img {
+            transition: .5s all;
+        }
+
+        &:hover {
+            background: @color-white;
+        }
+    }
+}

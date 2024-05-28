@@ -21,7 +21,7 @@
                     bottom: 5px;
                     top: auto;
                     left: 51px;
-                    height: 208px;
+                    height: 100px;
                 }
             }
         }
@@ -126,6 +126,25 @@
         background: url(../images/banner/pack-banner.jpeg) no-repeat;
         background-size: cover;
         background-position: 50%;
+    }
+
+
+    &.contact-banner {
+        // background: url(../images/contact-banner.jpg) no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        .container {
+            .info-banner {
+                h1 {
+                    &::before {
+                        content: "TO KNOW US \A BETTER";
+                    }
+                }
+            }
+        }
+
+
     }
 
     .social {
