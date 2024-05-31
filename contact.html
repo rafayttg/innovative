@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Welcome to Innovative Logo Maker, where creativity and innovation meet! 
+    We specialize in providing best-in-class services in logo design, animation, branding and web development.
+    With our team of experts and technology experts, we turn your vision into reality and help your brand shine in the digital world. 
+    Whether you're a startup looking for a catchy logo, 
+    a business needing great visuals, or a company looking to build a strong brand, 
+    we have the expertise you need. Let's turn your ideas into great designs and content!">
+
+    <meta name="keywords" content="Logo Design ,Animation Services, Branding Solutions ,Website Development ,Creative Design ,Graphic Design 
+    ,Digital Branding, Motion Graphics ,Custom Logo Creation Brand Identity Development ,Responsive Web Design ,Professional Animation ,Corporate Branding 
+    ,Logo Redesign ,Custom Website Design">
+
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon/favicon-32x32.png">
@@ -16,6 +27,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- ============ ANIMATE CSS ============= -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- ============ GOOGLE FONTS INTEGRATION -->
 
@@ -54,6 +70,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <!-- ====== WOW JS ============ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1520304605533671');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1520304605533671&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -120,7 +162,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="info-banner text-center">
+                    <div class="info-banner text-center wow animate__fadeInUp" data-wow-duration="2s">
                         <h4>CONNECT WITH US</h4>
                         <h1>
                             TO KNOW US
@@ -149,14 +191,14 @@
     <section class="com-sec">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 wow animate__fadeInLeft" data-wow-duration="1.5s">
                     <h6>Let's Connect</h6>
                     <h2>
                         <span>HELLO.</span>
                         COMMUNICATE YOUR PROJECT TO US
                     </h2>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 wow animate__fadeInRight" data-wow-duration="1.5s">
                     <p>
                         We believe in constant customer support, so our team of diligent experts is here to assist you
                         twenty-four hours a day, seven days a week. They will make certain that all your queries are
@@ -172,7 +214,7 @@
     <!-- ============= CONTACT US ================== -->
 
     <section class="our-contact">
-        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+        <div class="container wow animate__fadeInUp" data-wow-duration="2s">
             <div class="row">
                 <div class="col-md-8">
                     <div class="info-contact">
@@ -184,49 +226,46 @@
                             forward.
                         </p>
                         <div class="info-form">
-                            <form action="#" method="post" class="validate-contact" novalidate="novalidate">
+                            <form action="https://formspree.io/f/xwkgjdnb" method="POST" class="validate-contact"
+                                novalidate="novalidate">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-
-                                            <input type="text" class="required form-control" required="" name="cn"
+                                            <input type="text" class="required form-control" required="" name="name"
                                                 placeholder="John Smith" aria-required="true">
                                             <i class="far fa-user"></i>
                                         </div>
                                         <div class="form-group">
-
                                             <input type="email" class="required form-control email" required=""
-                                                name="em" placeholder="Email Address" aria-required="true">
+                                                name="_replyto" placeholder="Email Address" aria-required="true">
                                             <i class="far fa-envelope"></i>
                                         </div>
                                         <div class="form-group">
-
-                                            <input type="tel" class="required form-control  number ftpn" required=""
-                                                name="pn" placeholder="Phone" aria-required="true">
+                                            <input type="tel" class="required form-control number ftpn" required=""
+                                                name="phone" placeholder="Phone" aria-required="true">
                                             <i class="fas fa-mobile-alt"></i>
                                         </div>
                                         <div class="form-group">
-
-                                            <textarea autocomplete="nope" name="msg" class="required form-control"
+                                            <textarea autocomplete="nope" name="message" class="required form-control"
                                                 required="" placeholder="Message" aria-required="true"></textarea>
                                             <i class="far fa-envelope-open"></i>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 ">
+                                    <div class="col-md-12">
                                         <div class="btnsub show-s">
-                                            <p class="form_tagline"> <input type="checkbox" name="agree">
-                                                It is a long
-                                                established fact that a reader will be <span>Terms and Conditions</span>
-                                                content of a page when looking at its layout.</p>
-                                            <input type="submit" class="btn  btn-purple" name="send_data"
-                                                value="Submit Request">
-                                            <input type="hidden" name="send" value="1">
-                                            <input type="hidden" name="lead_area" value="" class="leadprice">
-
+                                            <p class="form_tagline">
+                                                <input type="checkbox" name="agree"> It is a long established fact that
+                                                a reader will be <span>Terms and Conditions</span> content of a page
+                                                when looking at its layout.
+                                            </p>
+                                            <button type="submit" class="btn btn-purple">
+                                                Submit Request
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -252,13 +291,13 @@
                             <h5>
                                 Email Address
                             </h5>
-                            <a href="mailto:info@tailoredlogodesigns.com">info@innovativelogomaker.com</a>
+                            <a href="mailto:info@innovativelogomaker.com">info@innovativelogomaker.com</a>
                         </div>
                         <div class="cont-more">
                             <h5>
                                 Contact Numbers
                             </h5>
-                            <a href="tel:+1-310-667-7945">+1-310-667-7945</a>
+                            <a href="tel:+1-401-214-5816">+1-401-214-5816</a>
                         </div>
                     </div>
                 </div>
@@ -356,24 +395,36 @@
         </div>
         <div class="copy">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-md-6">
                         <p>
-                            Copyright © 2024, innovative Logo Designs - All Rights Reserved
+                            Copyright © 2024, innovative Logo Maker - All Rights Reserved
                         </p>
                     </div>
-                    <!-- <div class="col-md-6">
-                        <ul>
-                            <li><a href="#">Terms &amp;
-                                    Condition</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div> -->
+                    <div class="col-md-6">
+                        <div class="credit-img">
+                            <img src="assets/images/brands/credit-card.png" alt="card image">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
+
+    <script defer src="assets/js/index.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+        )
+        wow.init();
+    </script>
 </body>
 
 </html>

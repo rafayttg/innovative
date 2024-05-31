@@ -35,7 +35,7 @@
             display: inline-block;
             padding: 0 12px;
             position: relative;
-            z-index: 1;
+            // z-index: 1;
             transition: .5s all;
 
             a {
@@ -102,5 +102,118 @@
             }
 
         }
+    }
+}
+
+@media screen and (max-width : 767.98px) {
+
+    .header {
+
+        .menu {
+            opacity: 0;
+
+            li {
+                display: block;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                border-bottom: 1px solid #616aab;
+                position: relative;
+                text-align: left;
+
+
+
+                a {
+                    font-size: 16px;
+                    padding-left: 0;
+                    color: #fff ;
+                    font-weight: 400;
+                    padding: 10px 15px;
+                    text-align: left;
+                    display: block;
+                    width: 100%;
+                    letter-spacing: 0.5px;
+                    text-align: left;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                }
+
+                &.me-btn{
+                    border-bottom: none;
+
+
+                    .phn-img{
+                        margin-top: 25px;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+
+
+        .main-menu {
+            margin: 0;
+            overflow-y:scroll ;
+            position: fixed;
+            left: -100%;
+            width: 75%;
+            top: 0;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            // background: rgb(37, 30, 24);
+            background: linear-gradient(0deg, #061d3d 25%, #38506c 100%);
+            height: 100%;
+            z-index: 1;
+            padding-top: 60px;
+
+            ul {
+                padding: 0 0;
+                width: 97%;
+            }
+        }
+
+        .menu-bottom {
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            float: right;
+            position: absolute;
+            z-index: 10;
+            cursor: pointer;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            right: 18px;
+            top: -50px;
+
+            span {
+                height: 2px;
+                background: #ffffff;
+                display: block;
+                width: 100%;
+                margin-bottom: 6px;
+                position: relative;
+            }
+        }
+
+
+        &.menu-open {
+            .main-menu {
+                left: calc(-1% - -3px);
+            }
+
+            .menu {
+                transition-delay: 0.5s;
+                opacity: 1;
+            }
+
+        }
+
+
+
+
+
     }
 }
